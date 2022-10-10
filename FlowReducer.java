@@ -15,7 +15,7 @@ public class FlowReducer extends Reducer<Text, FlowBean, Text, FlowBean> {
         long totalDown = 0;
         for (FlowBean value : values) {
             totalUp += value.getUpFlow();
-            totalUp += value.getDownFlow();
+            totalDown += value.getDownFlow();
         }
 
         //2.封装outK,outV
